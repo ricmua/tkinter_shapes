@@ -136,7 +136,7 @@ Draw a red square, with sides of length equal to the radius of the circle.
 ```
 
 The square is drawn at the origin, so it is only partially visible. Move the 
-square to overlap with, and obscure part, the circle.
+square to overlap with, and obscure part of, the circle.
 
 ```python
 >>> square.position = circle.position
