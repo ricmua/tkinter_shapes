@@ -253,7 +253,7 @@ class Circle(Polygon):
     @property
     def radius(self):
         """ Radius of the circular polygon. """
-        radii = [round(sqrt(xn**2 + yn**2), 6) for (xn, yn) in self.vertices]
+        radii = [round(sqrt(xn**2 + yn**2), 3) for (xn, yn) in self.vertices]
         r = radii[0]
         assert all([(rn == r) for rn in radii])
         return r
