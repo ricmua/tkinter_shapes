@@ -171,11 +171,11 @@ class Item:
         
     def __getitem__(self, key):
         """ Get option values for a Tkinter canvas item. """
-        return self.canvas.cget(self.id, key)
+        return self.canvas.itemcget(self.id, key)
         
     def __setitem__(self, key, value):
         """ Set options for a Tkinter canvas item. """
-        self.canvas.itemconfig(self.id, **{key: value})
+        self.canvas.itemconfigure(self.id, **{key: value})
         
     def delete(self):
         """ Remove the item from the canvas. """
